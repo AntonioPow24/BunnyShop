@@ -1,278 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BunnyShop</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body >
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <img src="/imagenes/BSLogoHeader.png" alt="" />
 
-        <header class="header">
-            <div class="header-content">
-                <img src="/imagenes/BSLogoHeader.png" alt="">
+          <div class="buscar">
+            <input type="search" placeholder="Buscar en BunnyShop" />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
 
-                <div class="buscar">
-                    <input type="search" placeholder="Buscar en BunnyShop">
-                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
-                    
+          <div class="acceso">
+            <i class="bx bx-user-circle"></i>
+            <i class="bx bx-cart"></i>
+            <p>S/. 00.00</p>
+          </div>
+        </div>
+        <div class="categorias">
+          <div class="categorias-content">
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/bebidas.svg" alt="" />
                 </div>
-
-                <div class="acceso">
-                    <i class='bx bx-user-circle'></i>
-                    <i class='bx bx-cart'></i>
-                    <p>S/. 00.00</p>
-                </div>
+                <p>Bebidas</p>
+              </a>
             </div>
-            <div class="categorias">
-                <div class="categorias-content">
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/bebidas.svg" alt="">
-                            </div>
-                            <p>Bebidas</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/dulces.svg" alt="">
-                            </div>
-                            <p>Dulces</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/Mochis.svg" alt="">
-                            </div>
-                            <p>Mochis</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/Ramen.svg" alt="">
-                            </div>
-                            <p>Ramen Japones</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/Snacks.svg" alt="">
-                            </div>
-                            <p>Snacks</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/Salsas.svg" alt="">
-                            </div>
-                            <p>Salsas y Especias</p>
-                        </a> 
-                    </div>
-                    <div class="categoriax">
-                        <a href="#">
-                            <div class="imagen-categoria">
-                                <img src="/imagenes/categorias/CajasSorpresas.svg" alt="">
-                            </div>
-                            <p>Cajas Sorpresa</p>
-                        </a> 
-                    </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/dulces.svg" alt="" />
                 </div>
-                
+                <p>Dulces</p>
+              </a>
             </div>
-        </header>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Mochis.svg" alt="" />
+                </div>
+                <p>Mochis</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Ramen.svg" alt="" />
+                </div>
+                <p>Ramen Japones</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Snacks.svg" alt="" />
+                </div>
+                <p>Snacks</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Salsas.svg" alt="" />
+                </div>
+                <p>Salsas y Especias</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/CajasSorpresas.svg" alt="" />
+                </div>
+                <p>Cajas Sorpresa</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <section class="presentacion">
-            <div class="sidebar">
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/new.svg" alt="">
-                        </div>
-                        <p>Novedades</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/bebidas.svg" alt="">
-                        </div>
-                        <p>Bebidas</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/dulces.svg" alt="">
-                        </div>
-                        <p>Dulces</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/Mochis.svg" alt="">
-                        </div>
-                        <p>Mochis</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/Ramen.svg" alt="">
-                        </div>
-                        <p>Ramen Japonés</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/Snacks.svg" alt="">
-                        </div>
-                        <p>Snacks</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/Salsas.svg" alt="">
-                        </div>
-                        <p>Salsas y Especias</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="item-categoria">
-                            <img src="/imagenes/categorias/CajasSorpresas.svg" alt="">
-                        </div>
-                        <p>Cajas Sorpresa</p>
-                    </a>
-                </div>
-            </div>
+      <section class="presentacion">
 
-            <div class="slider">
-                <ul>
-                    <li> <img src="/imagenes/Slider/slider1.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider2.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider3.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider4.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider5.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider6.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider7.jpg" alt=""></li>
-                    <li> <img src="/imagenes/Slider/slider8.jpg" alt=""></li>
-                    
-                    
-                  </ul>
-            </div>
-            <div class="videos-header">
-               <video autoplay muted loop>
-                <source src="/videos/publicidad1.mp4">
-               </video>
-               <video autoplay muted loop>
-                <source src="/videos/publicidad2.mp4">
-               </video>
-               <video autoplay muted loop>
-                <source src="/videos/publicidad3.mp4">
-               </video>
-                
-            </div>
+
+        <div class="sidebar">
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/new.svg" alt="" />
+              </div>
+              <p>Novedades</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/bebidas.svg" alt="" />
+              </div>
+              <p>Bebidas</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/dulces.svg" alt="" />
+              </div>
+              <p>Dulces</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Mochis.svg" alt="" />
+              </div>
+              <p>Mochis</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Ramen.svg" alt="" />
+              </div>
+              <p>Ramen Japonés</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Snacks.svg" alt="" />
+              </div>
+              <p>Snacks</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Salsas.svg" alt="" />
+              </div>
+              <p>Salsas y Especias</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/CajasSorpresas.svg" alt="" />
+              </div>
+              <p>Cajas Sorpresa</p>
+            </a>
+          </div>
+        </div>
 
 
 
-            <div class="anime-logos">
-                <div class="logos-container">
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo1.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo2.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo3.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo4.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo5.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo6.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo7.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo8.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo9.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo10.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo1.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo2.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo3.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo4.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo5.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo6.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo7.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo8.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo9.png" >
-                    </div>
-                    <div class="slide">
-                        <img src="/imagenes/LogosAnime/logo10.png" >
-                    </div>
-                    
-                    
-                </div>
+        <div class="slider">
+          <ul>
+            <li><img src="/imagenes/Slider/slider1.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider2.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider3.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider4.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider5.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider6.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider7.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider8.jpg" alt="" /></li>
+          </ul>
+        </div>
+
+
+        <div class="videos-header">
+          <video autoplay muted loop>
+            <source src="/videos/publicidad1.mp4" />
+          </video>
+          <video autoplay muted loop>
+            <source src="/videos/publicidad2.mp4" />
+          </video>
+          <video autoplay muted loop>
+            <source src="/videos/publicidad3.mp4" />
+          </video>
+        </div>
+
+
+
+        <div class="anime-logos">
+          <div class="logos-container">
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo1.png" />
             </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo2.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo3.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo4.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo5.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo6.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo7.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo8.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo9.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo10.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo1.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo2.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo3.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo4.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo5.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo6.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo7.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo8.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo9.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo10.png" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+
+      <main class="main">
+
+
+        <div class="titulo-main">
+          <h2>Novedades de BunnyShop</h2>
+          <div class="icono">
+            <img src="/imagenes/categorias/new.svg" alt="" />
+          </div>
+        </div>
+
+
+
+        <section class="productos">
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Ramune Sumikko.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Pikachu.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Eevee.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Feennekin.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Gengar.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Limon Pikachu.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Psyduck.webp"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Gominolas Kirby.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+          <div class="productox">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Gominolas UHA kororo.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pokémon 200ml</h4>
+            <span>S/. 11.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
         </section>
 
 
-
-        <main class="main">
-            <div class="titulo-main">
-
-            </div>
-
-            <div class="productos">
-                
-            </div>
-        </main>
-        <footer class="footer">
-            <h2>holaaa</h2>
-        </footer>
+      </main>
 
 
 
+
+      <footer class="footer">
+        <h2>holaaa</h2>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
