@@ -423,7 +423,12 @@ width: 100%;
 .productox .imagen-producto{
     width: 290px;
     
+    background: var(--blanco);
+}
+.productox .imagen-producto:hover{
     
+    
+    background: var(--blanco);
 }
 
 
