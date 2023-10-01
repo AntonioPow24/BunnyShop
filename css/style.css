@@ -7,7 +7,8 @@
     --turquesaHover:#5fc3c6;
     --carritohover: #3a8488;
     --turquesaProducto:#55BAB7;
-    --blancofondo:#f9f9f9;
+    --categoriaproducto:#38c5c0;
+   
     --hoverbuscar:#abaaaa;
     --buscarfondo:#e7e5e5;
     --tituloh2:#5bd976;
@@ -40,7 +41,7 @@
     "presentacion"
     "main"
     "footer ";
-    background: var(--blancofondo);
+    
 }
 
 
@@ -129,20 +130,21 @@
     
 }
 .categorias-content{
-    width: 1200px;
+    width: 1300px;
     padding: 7px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+    margin: auto;
     gap: 10px;
     
 }
 
 .categoriax a{
     padding: 4px 0;
+    font-size: 17px;
 display: flex;
 align-items: center;
-color: var(--blancofondo);
+color: var(--buscarfondo);
 justify-content: center;
 gap: 8px;
 border-radius: 10px;
@@ -593,4 +595,110 @@ span i , span{
 .footer-link p{
     color: var(--blanco);
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* DETAIL PRODUCTO */
+
+
+/* Titulo */
+.titulo-producto{
+    margin: -20px 0 0 0;
+    grid-area: presentacion;
+    background-image:url(/imagenes/Productos/Backgroundtitulo/background.jpg);
+    background-size: 505px;
+    height: 140px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo-producto h1{
+    background: transparent;
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--hovercategoria);
+}
+
+/* Pre Producto */
+
+.main-producto{
+grid-area: main;
+margin-top: -20px;
+padding-top: 40px;
+display: flex;
+}
+
+.main-producto .pre-producto{
+   
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.pre-producto .foto{ 
+    width: 450px;
+    height: 600px;
+    
+    margin-right: 50px;
+    background-image: url(/imagenes/Productos/Novedades/Ramune\ Pokemon.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: cover;   
+}
+.pre-producto .propiedades{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px 0;
+    border-top:1px solid var(--hoverbuscar); ;
+    border-bottom: 1px solid var(--hoverbuscar);
+}
+.propiedades .cate{
+    display: flex;
+    align-items: center;
+    
+    gap: 45px;
+}
+
+.cate span{
+    width: 60px;
+    font-size: 19px;
+    color: var(--negropuro);
+    font-weight: 600;
+}
+.cate a{
+    color: var(--hovercategoria);
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.cate a:hover{
+    color: var(--categoriaproducto);
+
+}
+
+
+
+
+
+
+
+.main-producto .pro-producto{
+    background: blue;
+    width: 60%;
 }
