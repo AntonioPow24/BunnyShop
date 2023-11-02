@@ -1,0 +1,41 @@
+
+.item{
+    
+    height: 12.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.item:not(:last-child){
+    border-bottom: 1px solid var(--negro);
+}
+
+
+.item:hover{
+    background: var(--turquesaHover);
+    
+}
+.item a{
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    gap: 10px;
+    margin-left: 4px;
+}
+.item a p{
+    color: var(--negro);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item a .item-categoria {
+width: 60px;
+display: flex;
+}
+.item a .item-categoria img {
+width: 100%;
+}
+
+
+

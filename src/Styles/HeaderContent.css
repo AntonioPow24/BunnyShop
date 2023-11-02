@@ -1,0 +1,66 @@
+.header-content{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 90px;
+    justify-content: center;
+    
+}
+.header-content img{
+    width: 340px;
+}
+
+
+.header-content .buscar {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    overflow: hidden;
+    background:var(--buscarfondo) ;
+}
+.buscar input{
+    width: 800px;
+    height: 100%;
+    border: none;
+    padding: 0 16px;
+    background: transparent;
+    outline: none;
+}
+.buscar button{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: transparent;
+   border: none;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+
+.buscar button:hover{
+    background: var(--hoverbuscar);
+    
+}
+
+.header-content .acceso{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    gap: 15px;
+}
+.acceso i{
+    font-size: 45px;
+    color: var(--negro);   
+}
+.acceso p{
+    font-size: 18px;
+    color: var(--negro);  
+    margin-bottom: 5px;
+}

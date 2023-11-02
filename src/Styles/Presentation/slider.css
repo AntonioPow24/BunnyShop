@@ -1,0 +1,12 @@
+
+
+.slider li{
+    list-style: none;
+    width: 1104px;
+ }
+li img{
+    
+    height: 100%;
+   
+    object-fit: cover;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Bebas+Neue&family=Cabin&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:ital@0;1&family=Fjalla+One&family=Heebo:wght@300&family=Inder&family=Kreon:wght@500&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;1,600&family=Sarabun:ital,wght@1,100&family=Slabo+27px&family=Yantramanav:wght@300&family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+:root{
+    --negro: #111;
+    --hovercategoria: #373737;
+    --rosa: #FFB6B9;
+    --turquesaHover:#5fc3c6;
+    --carritohover: #3a8488;
+    --turquesaProducto:#55BAB7;
+    --categoriaproducto:#38c5c0;
+   
+    --hoverbuscar:#abaaaa;
+    --buscarfondo:#e7e5e5;
+    --tituloh2:#5bd976;
+    --blanco: #fff;
+    --negropuro:#000000;
+    --nombresproductos:#cf4949;
+    --hoverelementosfooter:#FF828C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Sarabun', sans-serif;
+    text-decoration: none;
+}
+
+
+/* CONTENEDOR PRINCIPAL, GRID AREAS */
+.container{
+   
+    display: grid;
+    grid-template-rows: repeat(auto-fit,1fr);
+    grid-row-gap: 20px;
+    
+    grid-template-areas: 
+    "header"
+    "presentacion"
+    "main"
+    "footer ";
+    
+}
+
+/* SECCION DEL HEADER */
+.header{
+    background: rgb(220, 195, 195);
+    grid-area: header;
+}
+   /* header category */
+
+
+
+.category{
+    background-color: var(--negro);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+/* SECCION PRESENTACION PRINCIPAL */

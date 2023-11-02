@@ -1,0 +1,100 @@
+.productContainer{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+
+
+
+.productContainer .productox{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background: var(--blanco);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 9px, rgba(0, 0, 0, 0.23) 0px 3px 7px;
+}
+.productox .productImage{
+    width: 290px;
+    
+    background: var(--blanco);
+}
+.productox .productImage:hover{
+    
+    
+    background: var(--blanco);
+}
+
+
+.productImage img{
+    width: 100%;
+    
+}
+
+
+.productox h4{
+    font-size: 19px;
+    text-align: center;
+    color: var(--nombresproductos);
+    height: 70px;
+}
+
+.productox span{
+    color: var(--turquesaProducto);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+
+.productox .cantidad{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--hoverbuscar);
+}
+.cantidad button, .cantidad p{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.cantidad button{
+    background: var(--turquesaProducto);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cantidad button:hover{
+    background: var(--nombresproductos);
+    
+}
+
+
+.productox a{
+    display: flex;
+    width: 200px;
+    padding: 7px 8px;
+    background: var(--turquesaProducto);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.productox a:hover  {
+    background-color:var(--carritohover) ;
+}
+.productox a i{
+    margin-right: 5px;
+    font-size: 25px;
+}

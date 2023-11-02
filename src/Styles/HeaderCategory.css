@@ -1,0 +1,26 @@
+
+.categoryX{
+    padding:0 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.categoryX a{
+padding: 4px 0;
+font-size: 17px;
+display: flex;
+align-items: center;
+color: var(--buscarfondo);
+justify-content: center;
+gap: 8px;
+
+
+}
+.categoryX:hover{
+background: var(--hovercategoria);
+
+}
+
+
+.categoryImg img{
+    width: 35px;
+}

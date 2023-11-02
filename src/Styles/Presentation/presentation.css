@@ -1,0 +1,106 @@
+.presentacion{
+    width: 100%;
+    padding: 10px 3px 10px 20px;
+    
+    grid-area: presentacion;   
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    gap: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+
+
+/* Slider */
+.slider{ 
+    overflow: hidden; 
+}
+.slider ul{
+    display: flex;
+    animation: slide 35s infinite alternate ease-out;
+    width: 700%;
+    
+ }
+ @keyframes slide{
+    0%{margin-left: 0;}
+    12%{margin-left: 0;}
+
+    13%{margin-left: -100%;}
+    24%{margin-left: -100%;}
+    
+    25%{margin-left: -200%;}
+    37%{margin-left: -200%;}
+
+    38%{margin-left: -300%;}
+    49%{margin-left: -300%;}
+
+    50%{margin-left: -400%;}
+    61%{margin-left: -400%;}
+
+    62%{margin-left: -500%;}
+    73%{margin-left: -500%;}
+
+    74%{margin-left: -600%;}
+    86%{margin-left: -600%;}
+
+    87%{margin-left: -700%;}
+    100%{margin-left:-700%;}
+
+    
+
+}
+
+
+/* Videos  */
+.videosHeader{
+    padding-right: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+
+
+/* Logos */
+.anime-logos{
+    grid-column: 1/4;
+    padding: 30px 15px 30px 0;
+    overflow: hidden;
+   
+    
+}
+
+.anime-logos .logos-container{
+    width: calc(250px * 20);
+    height: 120px;
+    display: flex;
+    
+    padding: 10px 15px;
+    gap: 55px;
+    animation:  scroll 20s linear infinite;
+    -webkit-animation:  scroll 20s linear infinite ;
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-250px * 10.05));
+        transform: translateX(calc(-250px * 10.05));
+    }
+    
+ 
+}

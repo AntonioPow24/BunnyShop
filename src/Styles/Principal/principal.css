@@ -1,0 +1,37 @@
+
+
+.main{
+    grid-area: main;
+    
+    margin: 0 20px;
+}
+
+
+/* Titulo */
+.main .titulo-main{
+    width: 100%;
+    
+    padding: 10px 0;
+    
+    background: var(--turquesaHover);
+    
+    border-radius: 25px;
+    
+}
+
+.titulo-main h2{
+    color: var(--blancofondo);
+    text-align: center;
+    font-size: 50px;
+}
+
+.titulo-main .icono{
+    position: absolute;
+}
+.titulo-main .icono img{
+   
+   position: relative;
+    width: 70px;
+    bottom: 67px;
+    left: 20PX;
+}
