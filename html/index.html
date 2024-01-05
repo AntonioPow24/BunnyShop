@@ -13,6 +13,9 @@
   </head>
   <body>
     <div class="container">
+
+
+      
       <header class="header">
         <div class="header-content">
           <img src="/imagenes/BSLogoHeader.png" alt="" />
@@ -24,12 +27,35 @@
             </button>
           </div>
 
-          <div class="acceso">
-            <i class="bx bx-user-circle"></i>
-            <i class="bx bx-cart"></i>
-            <p>S/. 00.00</p>
+          <div class="acceso" id="acceso">
+            <i class="bx bx-user-circle" ></i>
+            <i class="bx bx-cart  cart-icon" ></i>
+            <div class="cart" id="cart">
+              <div class="cart-list" id="cart-list">
+
+                <!-- <div class="item" data-id="1">
+                  <img src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg" alt="">
+                  <span class="title">Ramune edición Pokémon 200ml</span>
+                  <span>S/. 11.87</span>
+                  <span>1</span>
+                  <span><i class='bx bx-x'></i></span>
+                </div>
+
+                <div class="item" data-id="2">
+                  <img src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg" alt="">
+                  <span class="title">Ramune edición Pokémon 200ml</span>
+                  <span>S/. 11.87</span>
+                  <span>1</span>
+                  <span><i class='bx bx-x'></i></span>
+                </div> -->
+              </div>
+
+              <a class="clean-cart" id="clean-cart" href="#">Vaciar carrito</a>
+            </div>
+            <p class="total-paid">S/. 00.00</p>
           </div>
         </div>
+
         <div class="categorias">
           <div class="categorias-content">
             <div class="categoriax">
@@ -277,41 +303,50 @@
 
 
         <section class="productos">
-          <div class="productox">
-            <a href="detailproduct.html" class="imagen-producto">
+
+
+
+
+
+          <div class="productox" data-id="1">
+            <a href="#" class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg"
               alt=""
             />
             </a>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Ramune Pokemon</h4>
+            <span>S/. 10.00</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="detailproduct.html"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
-            <div class="imagen-producto">
+
+
+          <div class="productox" data-id="2">
+            <a href="#" class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Ramune Sumikko.jpg"
               alt=""
             />
-            </div>
+            </a>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Ramune Sumikko</h4>
+            <span>S/. 10.50</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="3">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Pikachu.jpg"
@@ -319,16 +354,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Ramune edición Pikachu 200ml</h4>
+            <span>S/. 12.00</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="4">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Eevee.jpg"
@@ -336,16 +373,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Ramune edición Eevee 200ml</h4>
+            <span>S/. 11.50</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="5">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Feennekin.jpg"
@@ -353,16 +392,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Qdol Feennekin</h4>
+            <span>S/. 7.87</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="6">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Gengar.jpg"
@@ -370,16 +411,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Qdol Gengar</h4>
+            <span>S/. 13.00</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="7">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Limon Pikachu.jpg"
@@ -387,16 +430,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Qdol Limon Pikachu</h4>
+            <span>S/. 13.00</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="8">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Qdol Psyduck.webp"
@@ -404,16 +449,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Qdol Psyduck 200ml</h4>
+            <span>S/. 12.77</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="9">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Gominolas Kirby.jpg"
@@ -421,16 +468,18 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Gominolas Kirby</h4>
+            <span>S/. 7.00</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
-          <div class="productox">
+
+
+          <div class="productox" data-id="10">
             <div class="imagen-producto">
                 <img
               src="/imagenes/Productos/Novedades/Gominolas UHA kororo.jpg"
@@ -438,14 +487,14 @@
             />
             </div>
             
-            <h4>Ramune edición Pokémon 200ml</h4>
-            <span>S/. 11.87</span>
+            <h4>Gominolas UHA kororo</h4>
+            <span>S/. 6.55</span>
             <div class="cantidad">
               <button>-</button>
               <p>1</p>
               <button>+</button>
             </div>
-            <a href="#"><i class="bx bx-cart"></i>Añadir al carrito</a>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
           </div>
         </section>
 
@@ -459,7 +508,7 @@
         <div class="footer-content">
           <div class="content-1">
             <div class="imagen-content">
-              <img  src="/imagenes/BSLogoHeader.png" alt="">
+              <img  src="/imagenes/BSLogoHeader.png" alt=""/>
             </div>
             <p>Tienda online de productos japoneses, coreanos y otros paises. Dulces, Bebidas, Mochis, Ramen , Snacks , Salsas, Cajas Sorpresa</p>
           </div>
@@ -526,5 +575,8 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="/js/index.js"></script>
   </body>
 </html>

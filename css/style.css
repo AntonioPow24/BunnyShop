@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Bebas+Neue&family=Cabin&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:ital@0;1&family=Fjalla+One&family=Heebo:wght@300&family=Inder&family=Kreon:wght@500&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;1,600&family=Sarabun:ital,wght@1,100&family=Slabo+27px&family=Yantramanav:wght@300&family=Zen+Kaku+Gothic+New:wght@300&display=swap');
 
 :root{
-    --negro: #111111;
+    --negro: #111;
     --hovercategoria: #373737;
     --rosa: #FFB6B9;
     --turquesaHover:#5fc3c6;
@@ -12,7 +12,7 @@
     --hoverbuscar:#abaaaa;
     --buscarfondo:#e7e5e5;
     --tituloh2:#5bd976;
-    --blanco: #ffffff;
+    --blanco: #fff;
     --negropuro:#000000;
     --nombresproductos:#cf4949;
     --hoverelementosfooter:#FF828C;
@@ -55,7 +55,7 @@
     grid-area: header;
 }
 
-.header .header-content{
+.header-content{
     display: flex;
     padding: 10px 20px;
     align-items: center;
@@ -111,10 +111,12 @@
     align-items: center;
     margin: 7px 0;
     gap: 15px;
+    position: relative;
 }
 .acceso i{
     font-size: 45px;
     color: var(--negro);   
+    cursor: pointer;
 }
 .acceso p{
     font-size: 18px;
@@ -123,7 +125,69 @@
 }
 
 
+/* ======= carrito ========= */
 
+.cart{
+    display: none;
+}
+.acceso .cart.active{
+
+    display: block;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #f6f5f5;
+    z-index: 1000;
+
+    min-width: 450px;
+    min-height: 300px;
+}
+
+.cart .cart-list{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.cart-list .item{
+    padding: .5rem 0;
+    border-bottom: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item span{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+   width: 70px;
+}
+.item span.title{
+    font-size: 16px;
+    width: 120px;
+
+}
+.cart img{
+    width: 80px;
+}
+
+.cart .clean-cart{
+    margin-top: 1rem;
+    background:var(--rosa);
+    border-top: 1px solid var(--negropuro);
+    border-bottom:1px solid var(--negropuro) ;
+    color: var(--negro);
+    display: flex;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.clean-cart:hover{
+    background: var(--hoverelementosfooter);
+}
 /* Header Categorias */
 .categorias{
     background: var(--negro);
@@ -313,6 +377,9 @@ width: 100%;
 }
 
 
+
+
+/* Logos */
 
 .anime-logos{
     grid-column: 1/4;
@@ -622,15 +689,15 @@ span i , span{
     grid-area: presentacion;
     background-image:url(/imagenes/Productos/Backgroundtitulo/background.jpg);
     background-size: 505px;
-    height: 140px;
     
+    padding: 33.5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .titulo-producto h1{
-    background: transparent;
+    
     font-size: 55px;
     font-weight: 800;
     color: var(--hovercategoria);
@@ -704,6 +771,6 @@ display: flex;
 
 
 .main-producto .pro-producto{
-    background: blue;
+    background: rgb(0, 0, 255);
     width: 60%;
 }
